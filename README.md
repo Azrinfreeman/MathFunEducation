@@ -10,7 +10,7 @@ The Windows downloads were packaged from the existing local build; its exact sou
 
 > The web demo includes 2D lessons, quizzes, and minigames. Progress stays in the current browser. Use the Android app for camera-based AR and online accounts.
 
-To rebuild the browser demo, open the project in Unity 6000.6.7f1 with Web Build Support installed. Select **Web** in **File > Build Profiles**, then choose **Tools > Portfolio > Build Web Demo**. Unity exports to `Build/PortfolioWeb`. Serve that folder over HTTP to test it.
+To rebuild the browser demo, use a separate checkout in Unity 6000.6.7f1 with Web Build Support installed. In that checkout, remove `Assets/Resources/VuforiaConfiguration.asset` and the generated `Assets/VuforiaLicense.cs` if present. Let Vuforia recreate a blank configuration if prompted. The build checks for license values because Unity packages resources under `Resources` and compiles generated scripts. Select **Web** in **File > Build Profiles**, then choose **Tools > Portfolio > Build Web Demo**. Unity exports to `Build/PortfolioWeb`. Serve that folder over HTTP to test it.
 
 ## What makes it interesting
 

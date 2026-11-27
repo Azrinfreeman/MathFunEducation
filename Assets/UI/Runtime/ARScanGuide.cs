@@ -1,3 +1,4 @@
+#if !UNITY_WEBGL || UNITY_EDITOR
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -92,3 +93,4 @@ namespace FunMath.UI
         }
     }
 }
+#endif
