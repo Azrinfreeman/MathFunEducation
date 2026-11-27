@@ -8,7 +8,9 @@
 
 The Windows downloads were packaged from the existing local build; its exact source revision has not been verified. To rebuild the installer, first export a Windows build to `Publish/Windows`, then compile `Tools/windows-installer/MathFunEducational.iss` with Inno Setup 6.
 
-> The web demo runs in your browser. AR lessons and online account saving need the Android app.
+> The web demo includes 2D lessons, quizzes, and minigames. Progress stays in the current browser. Use the Android app for camera-based AR and online accounts.
+
+To rebuild the browser demo, open the project in Unity 6000.6.7f1 with Web Build Support installed. Select **Web** in **File > Build Profiles**, then choose **Tools > Portfolio > Build Web Demo**. Unity exports to `Build/PortfolioWeb`. Serve that folder over HTTP to test it.
 
 ## What makes it interesting
 
